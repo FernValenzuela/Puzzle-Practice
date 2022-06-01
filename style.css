@@ -1,0 +1,129 @@
+/* Colors are black, red, green, yellow, blue, pink, gray, brown, orange and purple */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.box {
+  min-width: 62px;
+  min-height: 150px;
+}
+
+div {
+  border: solid black 1px;
+}
+
+
+/* Do not edit above this line */
+/* Edit below: */
+
+
+#boxes {
+  display: grid;
+  grid-template-areas: 
+    "one one two three three"
+    "one one four five five"
+    "six seven seven five five"
+    "six eight nine nine ten";
+  grid-template-cloumns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 160px);
+  }
+}
+
+
+#box1 {
+  background-color: white;
+  color: black;
+  grid-area: one;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 160px);
+}
+
+#box1item2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 80px);
+  align-items: center;
+  justify-content: center;
+}
+
+#box2 {
+  background-color: red;
+  grid-area: two;
+}
+
+#box3 {
+  background-color: green;
+  grid-area: three;
+}
+
+#box3 > div {
+  
+}
+
+#box4 {
+  background-color: yellow;
+  grid-area: four;
+}
+
+#box5 {
+  background-color: blue;
+  grid-area: five;
+}
+
+#box5item1 {
+  
+}
+
+#box5item2 {
+  
+}
+
+#box5item2 > div {
+  
+}
+
+#box5item3 {
+  
+}
+
+
+#box6 {
+  background-color: pink;
+  grid-area: six;
+}
+
+#box6 > div {
+
+}
+
+#box7 {
+  background-color: gray;
+  grid-area: seven;
+}
+
+#box8 {
+  background-color: brown;
+  grid-area: eight;
+}
+
+#box9 {
+  background-color: orange;
+    grid-area: nine;
+}
+
+#box9 > div {
+  
+}
+
+#box9 :first-child {
+  
+}
+
+#box10 {
+  background-color: purple;
+    grid-area: ten;
+}
